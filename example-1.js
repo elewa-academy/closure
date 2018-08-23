@@ -27,7 +27,7 @@ let greet_lodo_traced;
 };
 
 let greeting_traced;
-{ // = greet_lodo_traced();
+{ // = greet_lodo();
 	let closure = {
 	  frame: "hello_closer_traced('lodo')",
 	  input: "lodo";
