@@ -1,4 +1,4 @@
-// https://goo.gl/JJ4jJe
+// pytut this
 let arg = "lodo";
 function hello_closer(input) {
   function hello_closed() {
@@ -17,7 +17,7 @@ let greet_lodo;
 	  input: "lodo"
 	};
 	let ret_val;
-	hello_closer: {
+	hello_closer_frame: {
 	  function hello_closed() {
 	    return "hello " + args.input;
 	  };
@@ -34,7 +34,7 @@ let greeting;
 	  input: "lodo";
 	};
 	let ret_val;
-	hello_closed: {
+	hello_closed_frame: {
 	  ret_val = "hello " + closure.input;
 	  break hello_closed;
 	};
