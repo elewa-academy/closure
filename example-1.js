@@ -30,7 +30,7 @@ let greet_lodo;
 let greeting;
 { // = greet_lodo();
 	let closure = {
-	  frame: "hello_closer_traced('lodo')",
+	  frame: "hello_close('lodo')",
 	  input: "lodo";
 	};
 	let ret_val;
