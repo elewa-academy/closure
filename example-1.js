@@ -24,6 +24,7 @@ let greet_lodo_traced;
 	  ret_val = hello_closed;
 	  break hello_closer;
 	};
+};
 
 let greeting_traced;
 { // = greet_lodo_traced();
