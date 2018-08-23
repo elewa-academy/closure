@@ -11,7 +11,7 @@ let greeing = greet_lodo();
 
 // ----- breakdown ------
 
-let greet_lodo_traced;
+let greet_lodo;
 { // = hello_closer('lodo');
 	let args = {
 	  input: "lodo"
@@ -24,9 +24,10 @@ let greet_lodo_traced;
 	  ret_val = hello_closed;
 	  break hello_closer;
 	};
+	greet_lodo = ret_val;
 };
 
-let greeting_traced;
+let greeting;
 { // = greet_lodo();
 	let closure = {
 	  frame: "hello_closer_traced('lodo')",
@@ -37,4 +38,5 @@ let greeting_traced;
 	  ret_val = "hello " + closure.input;
 	  break hello_closed;
 	};
+	greeting = ret_val;
 };
