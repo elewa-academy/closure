@@ -22,7 +22,7 @@ let greet_lodo;
 	    return "hello " + args.input;
 	  };
 	  ret_val = hello_closed;
-	  break hello_closer;
+	  break hello_closer_frame;
 	};
 	greet_lodo = ret_val;
 };
@@ -31,12 +31,12 @@ let greeting;
 { // = greet_lodo();
 	let closure = {
 	  frame: "hello_closer('lodo')",
-	  input: "lodo";
+	  input: "lodo"
 	};
 	let ret_val;
 	hello_closed_frame: {
 	  ret_val = "hello " + closure.input;
-	  break hello_closed;
+	  break hello_closed_frame;
 	};
 	greeting = ret_val;
 };
